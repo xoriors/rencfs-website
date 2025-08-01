@@ -35,9 +35,11 @@
   },
   "scripts": {
     "build": "tsc -b && vite build",
+    "build:gh-pages": "npm run cf-typegen && BASE_URL=/rencfs-website/ npm run build",
     "cf-typegen": "wrangler types",
     "check": "tsc && vite build && wrangler deploy --dry-run",
     "dev": "vite",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "preview": "vite preview"
   }
 }

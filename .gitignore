@@ -1,2 +1,8 @@
 node_modules
+dist
+.wrangler
+.idea
+*.log
+.DS_Store
+worker-configuration.d.ts
 
